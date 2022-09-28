@@ -51,9 +51,17 @@ function displayNumbers(numbers){
     let templateRows ="";
 
     for (let index = 0; index < numbers.length; index++) {
+        let className = "even";
         let number = numbers[index];
-        templateRows += `<tr><td>${number}</td></tr>`;}
+        if(number % 2 == 0){
+            className = "even";
+
+        }
+        else{
+            className = "odd";
+        }
+        templateRows += `<tr><td class="${className}>${number}</td></tr>`;}
         
-    document.getElementById("results").innerHTML = templateRows
+    document.getElementById("results").innerHTML = templateRows;
 
 }
