@@ -60,7 +60,7 @@ function displayNumbers(numbers){
         else{
             className = "odd";
         }
-        templateRows += `<tr><td class="${className}>${number}</td></tr>`;}
+        templateRows += `<tr><td class="${className}">${number}</td></tr>`;}
         
     document.getElementById("results").innerHTML = templateRows;
 
