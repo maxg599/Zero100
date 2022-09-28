@@ -56,7 +56,9 @@ footer .social>a:hover{
 .cssicon{
     color:rgb(14, 83, 210)
 }
-
+.quick{
+    color:rgb(136,0,21)
+}
 .checklist >li i{
     color:var(--secondary-color)
 }
@@ -66,4 +68,8 @@ pre[class*="language-"] {
 white-space: pre-wrap;
 word-break: break-all;
 word-wrap: break-word;
+}
+
+.logoFont{
+    font-family: 'Dela Gothic One', cursive;
 }
