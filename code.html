@@ -57,10 +57,60 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col-lg-8">
                 <pre class="line numbers"><code class="language-javascript">
-                    //call hello world//
-                      function helloWorld(){
-                        alert("hello World");
-                         }
+                    
+function getValues(){
+
+  let startValue = document.getElementById("startValue").value;
+  let endValue = document.getElementById("endValue").value;
+ 
+  startValue = parseInt(startValue);
+  endValue = parseInt(endValue);
+
+ if (Number.isInteger(startValue) && Number.isInteger(endValue)){
+    
+    let numbers = generateNumbers(startValue, endValue);
+  
+ displayNumbers(numbers);
+
+ } else {
+    alert("You must enter integers");
+ }
+}
+
+
+function generateNumbers(sValue, eValue){
+    let numbers= [];
+
+    for (let index = sValue; index <= eValue; index++){
+        numbers.push(index);
+    }
+
+
+    return numbers;
+
+}
+
+
+function displayNumbers(numbers){
+
+    let templateRows ="";
+
+    for (let index = 0; index < numbers.length; index++) {
+        let className = "even";
+        let number = numbers[index];
+        if(number % 2 == 0){
+            className = "even";
+
+        }
+        else{
+            className = "odd";
+        }
+        //doesn't render correctly with Prism//SEE SOURCE//
+        templateRows += `<tr><td class="${className}">${number}</td></tr>`;}
+        
+    document.getElementById("results").innerHTML = templateRows;
+
+}
                 </code>
                 </pre>
             </div>
