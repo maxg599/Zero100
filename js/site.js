@@ -38,11 +38,19 @@ function generateNumbers(sValue, eValue){
         numbers.push(index);
     }
 
+    // for (let firstValue = 0; firstValue <=50; firstValue++)   {
+    //       numbers.push(firstValue); console.log(firstValue);
+    //     }
+
 
     return numbers;
 
 }
 
+//console.log(generateNumbers(23,24))
+//console.log(generateNumbers(40,80))
+//console.log(generateNumbers(70,75))
+console.log(generateNumbers(123,124))
 //display the numbers and mark even bold
 //display or view funtion
 
