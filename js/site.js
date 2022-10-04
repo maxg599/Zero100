@@ -50,7 +50,7 @@ function generateNumbers(sValue, eValue){
 //console.log(generateNumbers(23,24))
 //console.log(generateNumbers(40,80))
 //console.log(generateNumbers(70,75))
-console.log(generateNumbers(123,124))
+//console.log(generateNumbers(123,124))
 //display the numbers and mark even bold
 //display or view funtion
 
